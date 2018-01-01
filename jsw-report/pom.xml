@@ -11,7 +11,7 @@
 	<artifactId>jsw</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>jsw Maven Webapp</name>
+	<name>jsw report aap</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>

@@ -9,8 +9,8 @@
 	<modules>
 		<module>../jsw-framework</module>
 		<module>../jsw-domain-object</module>
-		<!--<module>../jsw-dms-extraction</module>
-		<module>../jsw-sap-extraction</module>-->
+		<module>../jsw-dms-extraction</module>
+		<!--<module>../jsw-sap-extraction</module>-->
 		<module>../jsw-report</module>
 	</modules>
 	<dependencies>

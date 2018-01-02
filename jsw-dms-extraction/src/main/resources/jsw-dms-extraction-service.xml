@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/mvc 
+	 http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="prop"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:ReportToolConfig.properties" />
+	</bean>
+	<bean id="dmsExtractionService" class="com.jsw.dms.extraction.service.DmsExtractionServiceImpl">
+
+	</bean>
+<!-- 	<bean id="dataExtractor" class="com.jsw.dms.extraction.service.DmsDataExtractor" /> -->
+
+	<bean id="abstractFilenet" name="abstractFilenet" class="com.test.poc.AbstractFileNet"
+		abstract="true">
+		<!-- <property name="objectStore" value="filenet.objectStore}" />
+		<property name="userName" value="${filenet.userName}" />
+		<property name="password" value="${filenet.password}" />
+		<property name="stanza" value="${filenet.stanza}" />
+		<property name="uri" value="${filenet.uri}" />
+		<property name="filenetDocPath" value="${filenet.path}" /> -->
+		<property name="objectStore" value="filenet.objectStore" />
+		<property name="userName" value="filenet.userName" />
+		<property name="password" value="filenet.password" />
+		<property name="stanza" value="filenet.stanza" />
+		<property name="uri" value="filenet.uri" />
+		<property name="filenetDocPath" value="filenet.path" />
+	</bean>
+	<!-- <bean id="dmsRoaster" class="com.jsw.dms.extraction.service.Report_Roster_COM_AutoDateVer4"> 
+		</bean> -->
+</beans>

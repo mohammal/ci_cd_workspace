@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<groupId>com.jsw</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0</version>
+		<relativePath>../parent/pom.xml</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jsw</groupId>
+	<artifactId>jsw-dms-extraction</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>jsw-dms-extraction</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.jsw</groupId>
+			<artifactId>jsw-framework</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.filenet</groupId>
+			<artifactId>acmapi</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.filenet</groupId>
+			<artifactId>jace</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.filenet</groupId>
+			<artifactId>pe</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.filenet</groupId>
+			<artifactId>pe3pt</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.filenet</groupId>
+			<artifactId>peResources</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/stax/stax-api -->
+		<dependency>
+			<groupId>stax</groupId>
+			<artifactId>stax-api</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.filenet</groupId>
+			<artifactId>xlxpScanner</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.filenet</groupId>
+			<artifactId>xlxpScannerUtils</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.15</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

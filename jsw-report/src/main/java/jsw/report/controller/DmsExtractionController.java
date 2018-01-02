@@ -6,20 +6,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.jsw.dms.extraction.service.DmsExtractionService;
+//import com.jsw.dms.extraction.service.DmsExtractionService;
 
 @Controller
 @RequestMapping(value = "/dmsExtraction")
 public class DmsExtractionController {
 	
-	@Autowired
-	private DmsExtractionService dmsExtractionService;
+	//@Autowired
+	//private DmsExtractionService dmsExtractionService;
 	
 	@RequestMapping(value = "/extractDmsData", method = RequestMethod.GET)
 	
 	public ModelAndView extractDmsData(){
 	
-		dmsExtractionService.extractDmsData();
+		//dmsExtractionService.extractDmsData();
 		ModelAndView model = new ModelAndView("home");
 		return model;
 	}
